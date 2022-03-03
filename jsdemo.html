@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+</head>
+
+<body>
+    <h1 style="color:red" id="msg">Good Evening Dada</h1>
+    <button onclick="document.getElementById('msg').innerHTML = 'Good Ni8 Dada'">CLick Me</button>
+    <button onclick="showMe()">Show Me</button>
+    <p onclick="showMe()">Show</p>
+    <p id="result"></p>
+
+    <ol>
+        <li>C++</li>
+        <li>ANdroid</li>
+        <li>PHP</li>
+    </ol>
+
+    <script>
+        var friends = ["Anup", "Raaz", "Appu", "Krishnendu"];
+        var temp = "<ol>";
+        for (i = 0; i < friends.length; i++)
+            temp = temp + "<li>" + friends[i] + "</li>";
+
+        temp = temp + "</ol>"
+
+        document.getElementById("result").innerHTML = temp;
+
+        function showMe() {
+            document.getElementById('msg').innerHTML = 'Java Script is WOW';
+        }
+    </script>
+</body>
+
+</html>
